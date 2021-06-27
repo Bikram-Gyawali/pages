@@ -1,0 +1,8 @@
+@media screen and (max-width: 320px) {
+    .resp {
+        font-size: 10px;
+    }
+    .pd {
+        padding: 10px;
+    }
+}

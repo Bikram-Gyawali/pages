@@ -1,0 +1,5 @@
+@media only screen and (max-width: 490px) {
+    .resRat {
+        flex-direction: column;
+    }
+}
