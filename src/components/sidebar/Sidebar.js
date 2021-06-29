@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../sidebar/Sidebar.css";
+import "./Sidebar.css";
 
 function Sidebar(props) {
   return (
@@ -26,10 +26,12 @@ function Sidebar(props) {
         >
           <i className="fas fa-times"></i>
         </span>
-        <Link to="/about">About Me</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/clients">Source Code</Link>
-        <Link to="/contact">Contact</Link>
+        <div className="text-blue-900 text-left items-start">
+          <Link to="/about">Consult</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/clients">About us</Link>
+          <Link to="/contact">Help and Support</Link>
+        </div>
       </div>
     </div>
   );

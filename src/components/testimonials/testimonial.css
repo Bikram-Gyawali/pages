@@ -1,0 +1,25 @@
+@media only screen and (max-width: 900px) {
+    .box1 {
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        min-width: 200px !important;
+    }
+    .box2 {
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        min-width: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box1 {
+        flex-direction: column !important;
+        justify-content: space-around;
+        min-width: 200px;
+    }
+    .box2 {
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        min-width: 200px !important;
+    }
+}

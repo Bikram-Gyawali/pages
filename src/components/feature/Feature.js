@@ -1,6 +1,6 @@
 import React from "react";
 import "./feature.css";
-import Button from "react-bootstrap";
+import { Button } from "react-bootstrap";
 function Feature() {
   return (
     <div className="bg-gray-100 resp">
@@ -147,7 +147,7 @@ function Feature() {
         <div class="bg-white p-2 w-80 max-w-3xl sm:w-full sm:p-4 h-auto sm:h-64 rounded-2xl shadow-lg flex flex-col sm:flex-row gap-5 select-none ml-4 mt-4 mb-4 mx-auto">
           <img
             class="lg:h-48 md:h-40 w-30 object-cover object-center mr-2 rounded border-gray-500"
-            src="/images/dr1.jpg"
+            src="/images/article1.jpeg"
             alt="blog"
           />
           <div class="flex sm:flex-1 flex-col gap-2 p-1 ">
@@ -198,7 +198,7 @@ function Feature() {
       <div class="bg-white p-2 w-80 max-w-3xl sm:w-full sm:p-4 h-auto sm:h-64 rounded-2xl shadow-lg flex flex-col sm:flex-row gap-5 select-none ml-4 mt-4 mb-4 mx-auto">
         <img
           class="lg:h-48 md:h-40 w-30 object-cover object-center mr-2 rounded border-gray-500"
-          src="/images/dr1.jpg"
+          src="/images/article2.webp"
           alt="blog"
         />
         <div class="flex sm:flex-1 flex-col gap-2 p-1 ">
@@ -244,8 +244,8 @@ function Feature() {
             </button>
           </div>
         </div>
-        <Button>See all Articles</Button>
       </div>
+      <Button className="mb-2">Read More Articles</Button>
     </div>
   );
 }

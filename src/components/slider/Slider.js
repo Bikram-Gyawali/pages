@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./slider.css";
-import Feature from "../feature/Feature";
 function Slider() {
   const responsive = {
     desktop: {
@@ -23,24 +22,21 @@ function Slider() {
   };
   return (
     <div>
-      <div className="mt-3 bg-primary p-4 border-b-4">
-        <h1>
-          <strong>Our Sevices</strong>
-        </h1>
-      </div>
       <div className="mt-3 border-purple-200">
-        <div className="flex  pt-3 mx-auto  bg-light space-x-10 ">
-          <div className="mr-auto ml-4 pb-2  ">
-            <h1 className="text-xl my-auto -ml-1 font-semibold ">
-              Consult top doctors online for any health concern{" "}
+        <div className="flex  pt-3 mx-auto my-auto fles-between  space-x-10 -mb-12 ">
+          <div className="mr-auto ml-4   ">
+            <h1 className="text-lg my-auto  font-semibold ">
+              Consulation for your problems{" "}
             </h1>
-            <p className="text-sm my-auto  pt-2 -ml-1 font-medium text-red-500 ">
-              Private online consultations with verified doctors in all
-              specialists{" "}
-            </p>
           </div>
-          <div className="my-auto p-2 mr-3  bg-danger rounded text-white">
-            <button className="mx-auto  ">View All Specialaists>></button>
+          <div className="my-auto p-2 mr-3  rounded text-black">
+            <a
+              href="#r"
+              className="mx-auto  "
+              style={{ textDecoration: "none" }}
+            >
+              View All{" "}
+            </a>
           </div>
         </div>
       </div>
@@ -61,32 +57,40 @@ function Slider() {
         // deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
-        className="mt-3 border top pt-3 pb-4"
+        className="mt-3 mx-auto border-top pt-3 pb-4 w-11/12"
         style={{ zIndex: "-1000" }}
       >
-        <div className="cardCarosel border">
+        <div className="cardCarosel ">
           <i class="fas fa-user-md"></i>
-          <p className="card-text">Get doc</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Get doc</p>
+          <p className="text-sm pt-1 self-start">Consult Now</p>
         </div>
-        <div className="cardCarosel border rounded">
+        <div className="cardCarosel  rounded">
           <i class="fas fa-lungs-virus"></i>
-          <p className="card-text">Get Lungs Verified</p>
+          <p className="card-text text-sm pt-2 font-semibold "> Lungs Problm</p>
+          <p className="text-sm pt-1 self-start">Consult Now</p>
         </div>
-        <div className="cardCarosel border">
-          <i class="fas fa-teeth"></i> <p className="card-text">Check Teths</p>
+        <div className="cardCarosel ">
+          <i class="fas fa-teeth"></i>
+          <p className="card-text text-sm pt-2 font-semibold ">Check Teeths</p>
+          <p className="text-sm pt-1 self-start">Consult Now</p>
         </div>
-        <div className="cardCarosel border">
+        <div className="cardCarosel ">
           <i class="fas fa-pills"></i>{" "}
-          <p className="card-text">Get Medicines</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Get Medicines</p>
+          <p className="text-sm pt-1 self-start">Consult Now</p>
         </div>
-        <div className="cardCarosel border">
-          <i class="fas fa-x-ray"></i> <p className="card-text">Get Xray</p>
+        <div className="cardCarosel ">
+          <i class="fas fa-x-ray"></i>
+          <p className="card-text text-sm pt-2 font-semibold ">Get Xray</p>
+          <p className="text-sm pt-1 self-start">Consult Now</p>
         </div>
-        <div className="cardCarosel border">
-          <i class="fas fa-syringe"></i> <p className="card-text">Get doc</p>
+        <div className="cardCarosel ">
+          <i class="fas fa-syringe"></i>
+          <p className="card-text text-sm pt-2 font-semibold ">Get doc </p>
+          <p className="text-sm pt-1 self-start">Consult Now</p>
         </div>
       </Carousel>
-      <Feature />
     </div>
   );
 }
