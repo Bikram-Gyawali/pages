@@ -1,0 +1,56 @@
+.boxes {
+    width: 250px;
+}
+
+.sm-Text {
+    width: 300px;
+}
+
+.bigBox {
+    width: 1230px;
+    font-family: "Poppins" !important;
+}
+
+.box1 {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 640px) {
+    .resBox {
+        flex-direction: row;
+        width: 100%;
+    }
+    .boxes {
+        width: 30%
+    }
+    .imgRes {
+        height: 43px;
+        width: 43px;
+    }
+    .hedText {
+        font-size: 16px;
+    }
+    .sm-Text {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .resBox {
+        flex-direction: row;
+        width: 100%;
+    }
+    .boxes {
+        width: 30%
+    }
+    .imgRes {
+        height: 38px;
+        width: 38px;
+    }
+    .hedText {
+        font-size: 13px;
+    }
+    .sm-Text {
+        font-size: 10px;
+    }
+}

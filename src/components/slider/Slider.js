@@ -6,44 +6,32 @@ function Slider() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 6,
-      slidesToSlide: 1, // optional, default to 1.
+      items: 10,
+      slidesToSlide: 0, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 4,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
   return (
-    <div>
-      <div className="mt-3 border-purple-200">
-        <div className="flex  pt-3 mx-auto my-auto fles-between  space-x-10 -mb-12 ">
-          <div className="mr-auto ml-4   ">
-            <h1 className="text-lg my-auto  font-semibold ">
-              Consulation for your problems{" "}
-            </h1>
-          </div>
-          <div className="my-auto p-2 mr-3  rounded text-black">
-            <a
-              href="#r"
-              className="mx-auto  "
-              style={{ textDecoration: "none" }}
-            >
-              View All{" "}
-            </a>
-          </div>
+    <div className="align-center mt-16">
+      <div className="">
+        <div className="flex flex-row justify-between flex-wrap my-3 mx-8">
+          <h1 className="font-semibold ">Consulations for your problem</h1>
+          <a href="#all">View All</a>
         </div>
       </div>
       <Carousel
-        swipeable={true}
+        swipeable={"desktop" ? false : true}
         draggable={true}
-        showDots={true}
+        showDots={"mobile" ? false : true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
@@ -53,42 +41,112 @@ function Slider() {
         customTransition="all 1s"
         transitionDuration={1000}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         // deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
-        className="mt-3 mx-auto border-top pt-3 pb-4 w-11/12"
+        className="mt-3 pt-1  pb-4 mx-8 "
         style={{ zIndex: "-1000" }}
       >
         <div className="cardCarosel ">
           <i class="fas fa-user-md"></i>
-          <p className="card-text text-sm pt-2 font-semibold ">Get doc</p>
-          <p className="text-sm pt-1 self-start">Consult Now</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
         </div>
         <div className="cardCarosel  rounded">
           <i class="fas fa-lungs-virus"></i>
-          <p className="card-text text-sm pt-2 font-semibold "> Lungs Problm</p>
-          <p className="text-sm pt-1 self-start">Consult Now</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
         </div>
         <div className="cardCarosel ">
           <i class="fas fa-teeth"></i>
-          <p className="card-text text-sm pt-2 font-semibold ">Check Teeths</p>
-          <p className="text-sm pt-1 self-start">Consult Now</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
         </div>
         <div className="cardCarosel ">
           <i class="fas fa-pills"></i>{" "}
-          <p className="card-text text-sm pt-2 font-semibold ">Get Medicines</p>
-          <p className="text-sm pt-1 self-start">Consult Now</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
         </div>
         <div className="cardCarosel ">
           <i class="fas fa-x-ray"></i>
-          <p className="card-text text-sm pt-2 font-semibold ">Get Xray</p>
-          <p className="text-sm pt-1 self-start">Consult Now</p>
+          <p className="card-text text-sm pt-2 font-semibold ">Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
         </div>
         <div className="cardCarosel ">
           <i class="fas fa-syringe"></i>
-          <p className="card-text text-sm pt-2 font-semibold ">Get doc </p>
-          <p className="text-sm pt-1 self-start">Consult Now</p>
+          <p className="card-text text-sm pt-2 font-semibold "> Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
+        </div>
+        <div className="cardCarosel ">
+          <i class="fas fa-syringe"></i>
+          <p className="card-text text-sm pt-2 font-semibold "> Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
+        </div>
+        <div className="cardCarosel ">
+          <i class="fas fa-syringe"></i>
+          <p className="card-text text-sm pt-2 font-semibold "> Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
+        </div>
+        <div className="cardCarosel ">
+          <i class="fas fa-syringe"></i>
+          <p className="card-text text-sm pt-2 font-semibold "> Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
+        </div>
+        <div className="cardCarosel ">
+          <i class="fas fa-syringe"></i>
+          <p className="card-text text-sm pt-2 font-semibold "> Covid 19</p>
+          <a
+            className="text-sm pt-1 self-start text-primary hover:no-underline"
+            href="#q"
+          >
+            Consult Now
+          </a>
         </div>
       </Carousel>
     </div>

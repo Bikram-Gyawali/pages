@@ -132,7 +132,7 @@ function NavBar() {
           <div className=" flex flex-row my-auto text-left ">
             <div className="mx-3 ">
               <NavLink className="hover:no-underline hover:text-dark" to="/">
-                <p className="home up font-bold ">Doctors</p>
+                <p className="home up font- ">Doctors</p>
                 <small className="small mt-4 ">Consult a doctor</small>
               </NavLink>
             </div>
@@ -141,7 +141,7 @@ function NavBar() {
                 className="hover:no-underline hover:text-dark"
                 to="/consult"
               >
-                <p className="home up font-bold ">Consult</p>
+                <p className="home up font-medium ">Consult</p>
                 <small className="small mt-4 ">Consult a doctor</small>
               </NavLink>
             </div>
@@ -150,7 +150,7 @@ function NavBar() {
                 className="hover:no-underline hover:text-dark"
                 to="/consult"
               >
-                <p className="home up font-bold ">Pharmacy</p>
+                <p className="home up font-medium ">Pharmacy</p>
                 <small className="small mt-4 ">Consult a doctor</small>
               </NavLink>
             </div>
@@ -159,7 +159,7 @@ function NavBar() {
                 className="hover:no-underline hover:text-dark"
                 to="/consult"
               >
-                <p className="home up font-bold ">Diagonistics</p>
+                <p className="home up font-medium ">Diagonistics</p>
                 <small className="small mt-4 ">Consult a doctor</small>
               </NavLink>
             </div>
